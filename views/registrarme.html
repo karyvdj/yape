@@ -4,30 +4,31 @@
     <meta charset="utf-8">
     <title>Registrame</title>
     <link rel="stylesheet" href="../static/materialize-css/dist/css/materialize.min.css">
-    <link rel="stylesheet" href="static/css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/main.css">
   </head>
   <body>
-    <section>
-      <img src="" alt="">
-      <h2>Para comenzar validemos tu número</h2>
-      <p>Recibirás un SMS con un código de valiación</p>
+    <section class="padding-contenedor">
+      <div class="center">
+        <img src="../static/img/icons/phone.png" alt="phone">
+      </div>
+      <h1 class="center"><b>Para comenzar validemos tu número</b></h1>
+      <h4 class="center">Recibirás un SMS con un código de valiación</h4>
       <div class="input-field">
+        <i class="material-icons prefix grey-text">stay_current_portrait</i>
         <input id="icon_telephone" type="tel" class="validate">
-        <label for="icon_telephone gray">
-          <i class="material-icons prefix">phone</i>
-          (+55)
-        </label>
+        <label for="icon_telephone">(+55)</label>
         <p>
-          <input type="checkbox" id="test5" />
-          <label for="test5">Apecto los<span class="cyan-text text-lighten-1">Términos y condiciones</span></label>
+          <input type="checkbox" class="filled-in" id="filled-in-box"/>
+          <label for="filled-in-box">Apecto los <span class="cyan-text text-lighten-1">Términos y condiciones</span></label>
         </p>
       </div>
       <div class="center">
-        <a id="continuar" class="btn waves-effect amber white-text size-img disabled" href="#">CONTINUAR</a>
+        <a id="continuar" class="btn btn-large waves-effect amber white-text size-img" href="#">CONTINUAR</a>
       </div>
     </section>
-    <script src="static/jquery/dist/jquery.min.js"> </script>
-    <script src="static/materialize-css/dist/js/materialize.min.js"> </script>
-    <script src="static/js/main.js"></script>
+    <script src="../static/jquery/dist/jquery.min.js"> </script>
+    <script src="../static/materialize-css/dist/js/materialize.min.js"> </script>
+    <script src="../static/js/main.js"></script>
   </body>
 </html>

@@ -1,14 +1,27 @@
-// var cargarPagina = function(){
-//   cargarApi();
-// }
-//
-// var cargarApi = function () {
-//   $.getJSON(api.url, function (api) {
-//     console.log(api)
-//   });
-// };
+function cargarpagina() {
+	 $('.carousel.carousel-slider').carousel({fullWidth: true});
+}
 
-//carrusel
-$('.carousel.carousel-slider').carousel({fullWidth: true});
+// Petición al servidor
+function getJSON(url) {
+	return new Promise(function (resolve, reject) {
+		var ajax = new XMLHttpRequest();
 
-// $(document).ready(cargarPagina);
+		ajax.open("GET", url),
+		ajax.send();
+		ajax.onreadystatechange = function () {
+			if (ajax.readyState == 4) {
+				// resolve(JSON.parse(ajax.responseText));
+			}
+		}
+	});
+}
+
+getJSON("api/users.js")
+.then(function (datos) {
+	console.log(datos);
+	return getJSON(dato);
+});
+
+
+$(document).ready( cargarpagina);
