@@ -36,7 +36,7 @@ app.listen(port, () => {
 app.use("/api", express.static(__dirname + '/api')); //carpeta data que contiene el JSON
 app.use("/static", express.static(__dirname + "/node_modules"));
 app.use("/static", express.static(__dirname + "/assets"));
-
+app.use("/static", express.static(__dirname + "/views"));
 
 app.get("/",function(req,res){
   res.sendFile(__dirname+"/index.html")

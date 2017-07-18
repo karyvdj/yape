@@ -1,11 +1,11 @@
 section.carousel{
   margin-top: 20vh;
 }
-#registrame{
+#registrame, .text-carousel{
   margin-top: 5vh;
 }
 .size-img{
-  height: 50%;
+  width: 80%;
 }
 .carousel .indicators .indicator-item{
   background: #e0e0e0;
