@@ -1,0 +1,15 @@
+section.carousel{
+  margin-top: 20vh;
+}
+#registrame{
+  margin-top: 5vh;
+}
+.size-img{
+  height: 50%;
+}
+.carousel .indicators .indicator-item{
+  background: #e0e0e0;
+}
+.carousel .indicators .indicator-item.active{
+  background:#d32f2f;
+}
