@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Ingresar codigo</title>
+    <link rel="stylesheet" href="./../static/materialize-css/dist/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/main.css">
+  </head>
+  <body>
+    <a href="registrarme.html" class="grey-text"><i class="material-icons large">chevron_left</i></a>
+
+    <section class="padding-contenedor">
+      <div class="center">
+        <img src="../assets/img/icons/message.png" alt="phone">
+      </div>
+      <h1 class="center"><b>Ahora ingresa tu código</b></h1>
+      <h4 class="center">Enviamos un SMS con tu código de validación al número <b>1234567890</b></h4>
+      <form  id="formulario-codigo" class="input-field">
+        <h4>
+          <input id="input-codigo" class="center" type="tel" placeholder="-   -   -   -   -">
+          <label for="input-codigo">
+            <img src="../assets/img/icons/lock.png" class="prefix" alt="candado">
+          </label>
+        </h4>
+        <h4 class="grey-text text-lighten-1 center">
+          Reintentar en <i class="material-icons">query_builder</i> 21
+        </h4>
+      </form>
+
+      <div class="right-align siguiente">
+        <a href="usuario.html" class="grey-text">
+          <i class="material-icons large">chevron_right</i>
+        </a>
+      </div>
+    </section>
+    <script src="./../static/jquery/dist/jquery.min.js"> </script>
+    <script src="./../static/materialize-css/dist/js/materialize.min.js"> </script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

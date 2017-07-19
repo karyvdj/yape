@@ -21,7 +21,6 @@ function validarTel() {
 		$btnContinuar.attr("disabled", true);
 		$checkboxTel.removeAttr("checked");
 	}
-
 };
 
 // url: http//localhost:3000/api/registerNumber

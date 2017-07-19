@@ -20,14 +20,18 @@ section.carousel{
 }
 
 /*REGISTRARME*/
-#registrame, #continuar{
+#registrame, #continuar, #crear-cuenta{
   font-size: 3em;
   min-height: 100px;
   line-height: 100px;
 }
 
 .padding-contenedor{
-  padding: 25% 8%;
+  padding: 15% 8%;
+}
+
+h4{
+    line-height: 150%;
 }
 
 .padding-contenedor h1, h4{
@@ -35,10 +39,19 @@ section.carousel{
 }
 
 .input-field, #continuar{
-  margin-top: 10vh;
+  margin-top:8vh;
 }
 
 .input-field label, input{
   font-size: 1em;
-  top:-.5rem;
+  top:-1.5rem;
+}
+
+/*CODIGO*/
+
+#formulario-codigo h4:last-child{
+  margin-top: 0;
+}
+.siguiente{
+  margin-top: 40%;
 }
