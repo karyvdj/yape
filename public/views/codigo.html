@@ -2,38 +2,44 @@
 <html lang="es">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ingresar codigo</title>
     <link rel="stylesheet" href="./../static/materialize-css/dist/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/main.css">
   </head>
   <body>
-    <a href="registrarme.html" class="grey-text"><i class="material-icons large">chevron_left</i></a>
-
+    <a href="registrarme.html" class="grey-text"><i class="material-icons medium">chevron_left</i></a>
     <section class="padding-contenedor">
       <div class="center">
-        <img src="../assets/img/icons/message.png" alt="phone">
+        <img class="img-tamaño-chico" src="../assets/img/icons/message.png" alt="phone">
       </div>
-      <h1 class="center"><b>Ahora ingresa tu código</b></h1>
-      <h4 class="center">Enviamos un SMS con tu código de validación al número <b>1234567890</b></h4>
-      <form  id="formulario-codigo" class="input-field">
-        <h4>
-          <input id="input-codigo" class="center" type="tel" placeholder="-   -   -   -   -">
-          <label for="input-codigo">
-            <img src="../assets/img/icons/lock.png" class="prefix" alt="candado">
-          </label>
-        </h4>
-        <h4 class="grey-text text-lighten-1 center">
-          Reintentar en <i class="material-icons">query_builder</i> 21
-        </h4>
+      <h5 class="center"><b>Ahora ingresa tu código</b></h5>
+      <h6 class="center grey-text text-darken-1">
+        Enviamos un SMS con tu código de validación al número
+        <span class="grey-text text-darken-4"><b>1234567890</b></span>
+      </h6>
+      <form  id="formulario-codigo">
+        <div class="input-field margin-top-10">
+          <div class="row margin-bottom-0">
+            <div class="col s2">
+              <img  class="responsive-img img-tamaño-mediano" src="../assets/img/icons/lock.png" class="prefix" alt="candado">
+            </div>
+            <input id="input-codigo" class="center col s10 " type="password" placeholder="-   -   -   -   -">
+          </div>
+          <p class="grey-text text-lighten-1 center margin-top-0">
+            Reintentar en <i class="material-icons">query_builder</i> 21
+          </p>
+        </div>
       </form>
-
-      <div class="right-align siguiente">
-        <a href="usuario.html" class="grey-text">
-          <i class="material-icons large">chevron_right</i>
-        </a>
-      </div>
     </section>
+
+    <div class="right-align  margin-top-10">
+      <a href="usuario.html" class="grey-text">
+        <i class="material-icons medium">chevron_right</i>
+      </a>
+    </div>
     <script src="./../static/jquery/dist/jquery.min.js"> </script>
     <script src="./../static/materialize-css/dist/js/materialize.min.js"> </script>
     <script src="../assets/js/main.js"></script>

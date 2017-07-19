@@ -2,6 +2,8 @@
 <html lang="es">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ingresar codigo</title>
     <link rel="stylesheet" href="./../static/materialize-css/dist/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -10,30 +12,37 @@
   <body>
     <section class="padding-contenedor">
       <div class="center">
-        <img src="../assets/img/icons/message.png" alt="phone">
+        <img class="img-tamaño-chico" src="../assets/img/icons/lockone.png" alt="phone">
       </div>
-      <h1 class="center"><b>Crear tu usuario Yape</b></h1>
-      <h4 class="center">Ingresar un nombre, email y clave de usuarios.</h4>
-      <form  id="formulario-usuario" class="input-field">
-        <h4>
-          <img src="../assets/img/icons/user.png"  alt="usuario">
-          <input class="center" type="text" placeholder="Nombre">
-        </h4>
-        <h4><label for=""></label>
-          <img src="../assets/img/icons/message-gray.png" alt="email">
-          <input class="center" type="email" placeholder="correo@ejemplo.com">
-        </h4>
-        <h4>
-          <img src="../assets/img/icons/lock.png" alt="candado">
-          <input  class="center" type="password" placeholder="Ingresa clave de 6 digitos">
-        </h4>
-      </h4>
-      <h4 class="grey-text text-lighten-1 center">
-        Cuida esta clave como oro, es tu acceso a Yape
-      </h4>
+      <h5 class="center"><b>Crear tu usuario Yape</b></h5>
+      <h6 class="center grey-text text-lighten-1">Ingresar un nombre, email y clave de usuarios.</h6>
+      <form  id="formulario-codigo">
+        <div class="input-field">
+          <div class="row margin-bottom-0">
+            <div class="col s2">
+              <img  class="responsive-img img-tamaño-mediano" src="../assets/img/icons/user.png" class="prefix" alt="usuario">
+            </div>
+            <input id="input-codigo" class="center col s10 " type="text" placeholder="Nombre">
+          </div>
+          <div class="row margin-bottom-0">
+            <div class="col s2">
+              <img  class="responsive-img img-tamaño-mediano" src="../assets/img/icons/message-gray.png" class="prefix" alt="usuario">
+            </div>
+            <input id="input-codigo" class="center col s10 " type="email" placeholder="correo@ejemplo.com">
+          </div>
+          <div class="row margin-bottom-0">
+            <div class="col s2">
+              <img  class="responsive-img img-tamaño-mediano" src="../assets/img/icons/lock.png" class="prefix" alt="usuario">
+            </div>
+            <input id="input-codigo" class="center col s10 " type="password" placeholder="Ingresa clave de 6 digitos">
+          </div>
+          <p class="grey-text text-lighten-1 center margin-top-0">
+            Cuida esta clave como oro, es tu acceso a Yape
+          </p>
+        </div>
       </form>
       <div class="center">
-        <a id="crear-cuenta" class="btn btn-large waves-effect amber white-text size-img" disabled href="views/codigo.html">CREAR CUENTA</a>
+        <a id="crear-cuenta" class="btn btn-large waves-effect amber white-text size-img" href="exito.html">CREAR CUENTA</a>
       </div>
     </section>
     <script src="./../static/jquery/dist/jquery.min.js"> </script>

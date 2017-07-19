@@ -1,13 +1,52 @@
+/*REUTILIZABLES*/
+.img-tamaño-mediano{
+  width: 70%;
+}
+
+.img-tamaño-chico{
+  width: 30%;
+}
+
+.padding-18{
+  padding: 0 18%;
+}
+
+.padding-contenedor{
+  padding: 15% 8%;
+}
+
+.margin-top-10{
+    margin-top: 10vh;
+}
+
+.margin-bottom-0{
+    margin-bottom: 0;
+}
+
+.margin-top-0{
+    margin-top: 0;
+}
+
+.morado-dark{
+   color:#38052a;
+}
+
+.vertical-align{
+  margin-top: 50%;
+}
+h6{
+  line-height: 1.5em;
+}
+
 /*INDEX*/
 section.carousel{
-  margin-top: 20vh;
-  min-height: 850px;
+  min-height: 450px;
 }
 
 .carousel .indicators .indicator-item{
   background: #e0e0e0;
-  height: 30px;
-  width: 30px;
+  width: 15px;
+  height: 15px;
 }
 
 .carousel .indicators .indicator-item.active{
@@ -15,47 +54,18 @@ section.carousel{
 }
 
 #registrame{
-  margin-top: 5vh;
+  margin-top:3vh;
   width: 80%;
 }
 
 /*REGISTRARME*/
-#registrame, #continuar, #crear-cuenta{
-  font-size: 3em;
-  min-height: 100px;
-  line-height: 100px;
-}
-
-.padding-contenedor{
-  padding: 15% 8%;
-}
-
-h4{
-    line-height: 150%;
-}
-
-.padding-contenedor h1, h4{
-  margin-top: 4vh;
-}
-
-.input-field, #continuar{
-  margin-top:8vh;
-}
-
-.input-field label, input{
-  font-size: 1em;
-  top:-1.5rem;
+ #continuar{
+  margin-top:15vh;
 }
 
 /*CODIGO*/
-
- #formulario-usuario h4:last-child, #formulario-codigo h4:last-child{
-  margin-top: 0;
-}
-.siguiente{
-  margin-top: 40%;
+#crear-cuenta, form>div:first-child {
+  margin-top: 5vh;
 }
 
-#crear-cuenta{
-  margin-top: 3vh;
-}
+/*EXITO*/
