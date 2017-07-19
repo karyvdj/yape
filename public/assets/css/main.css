@@ -49,9 +49,13 @@ h4{
 
 /*CODIGO*/
 
-#formulario-codigo h4:last-child{
+ #formulario-usuario h4:last-child, #formulario-codigo h4:last-child{
   margin-top: 0;
 }
 .siguiente{
   margin-top: 40%;
+}
+
+#crear-cuenta{
+  margin-top: 3vh;
 }
