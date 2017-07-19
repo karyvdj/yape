@@ -16,8 +16,15 @@ const format = morganjson({
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(express.static('/public'));
+app.use(express.static('public'));
 app.use(morgan(format));
+
+app.use("/api", express.static(__dirname + '/api')); //carpeta data que contiene el JSON
+app.use("/static", express.static(__dirname + "/node_modules"));
+
+app.get("/",function(req,res){
+  res.sendFile(__dirname+"/index.html")
+})
 
 let router = express.Router();
 
@@ -32,12 +39,3 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log('Server running on port '+port+'!');
 });
-
-app.use("/api", express.static(__dirname + '/api')); //carpeta data que contiene el JSON
-app.use("/static", express.static(__dirname + "/node_modules"));
-app.use("/static", express.static(__dirname + "/assets"));
-app.use("/static", express.static(__dirname + "/views"));
-
-app.get("/",function(req,res){
-  res.sendFile(__dirname+"/index.html")
-})
