@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tarjeta</title>
+    <link rel="stylesheet" href="./../static/materialize-css/dist/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/main.css">
+  </head>
+  <body>
+    <div class="right info">
+      <a class="cyan-text text-accent-4"><i class="material-icons small">info_outline</i></a>
+    </div>
+    <section class="padding-contenedor">
+      <div class="center">
+        <img class="img-tamaño-chico" src="../assets/img/icons/bcp-logo.png" alt="phone">
+      </div>
+      <h5 class="center"><b>Registra tu tarjeta de débito BCP</b></h5>
+      <h6 class="center grey-text text-darken-1">
+        Por ahora sólo aceptamos cuenta de ahorro y/o corriente en soles
+        <span class="grey-text text-darken-4"><b id="telValidado"></b></span>
+      </h6>
+      <form  id="formulario-tarjeta">
+        <div class="input-field margin-top-10">
+          <div class="row margin-bottom-0">
+            <div class="col s2">
+              <img  class="responsive-img img-tamaño-mediano" src="../assets/img/icons/card.png"  alt="candado">
+            </div>
+            <input class="center col s10 " type="number">
+          </div>
+          <p class="cyan-text text-darken-1 center margin-top-0">
+            <i class="material-icons">filter_center_focus</i>
+            Escanear tarjeta
+          </p>
+        </div>
+        <div class="row margin-top-5">
+          <p class="grey-text text-lighten-1 col 6">Fecha de vencimiento</p>
+          <div class="input-field col s3 ">
+            <input class="center" type="number" placeholder="Mes">
+          </div>
+          <div class="input-field col s3">
+            <input class="center" type="number" placeholder="Año">
+          </div>
+        </div>
+      </form>
+    </section>
+    <div class="center">
+      <a class="btn btn-large waves-effect amber white-text size-img"  href="clave-tarjeta.html">CONTINUAR</a>
+    </div>
+    <script src="./../static/jquery/dist/jquery.min.js"> </script>
+    <script src="./../static/materialize-css/dist/js/materialize.min.js"> </script>
+  </body>
+</html>

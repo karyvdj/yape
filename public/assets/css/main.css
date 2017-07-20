@@ -31,6 +31,13 @@
    color:#38052a;
 }
 
+.morado-dark-fondo{
+   background:#38052a;
+}
+
+.morado-fondo{
+   background:#451e36;
+}
 .vertical-align{
   margin-top: 50%;
 }
@@ -64,8 +71,12 @@ section.carousel{
 }
 
 /*CODIGO*/
-#crear-cuenta, form>div:first-child {
+#crear-cuenta, form>div:first-child, .margin-top-5 {
   margin-top: 5vh;
 }
 
-/*EXITO*/
+/*CLAVE-TARJETA*/
+.info{
+  margin-top:2vh;
+  padding-right: 4%;
+}
