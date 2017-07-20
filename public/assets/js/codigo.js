@@ -9,6 +9,7 @@ function cargarPagina() {
 var $url = 'http://localhost:3000/api/resendCode';
 var $codigoValido = localStorage.getItem('codigoUsuario')
 var $inputCodigo = $("#input-codigo");
+var $telUsuario = localStorage.getItem('telUsuario');
 
 function mostrarTelValido() {
   var $telValidado = $("#telValidado");
@@ -16,13 +17,21 @@ function mostrarTelValido() {
 }
 
 function validarCodigo(){
-	var $codigo = $inputCodigo.val();
-  console.log($codigo);
-	if($codigo == $codigoValido){
+	var $codigoIngresado = $inputCodigo.val();
+  // console.log($codigoIngresado);
+	if($codigoIngresado == $codigoValido){
 		location.href = "usuario.html";
 	} else {
-		// generarNuevoCodigo();
+		generarNuevoCodigo();
 	}
 };
+
+function generarNuevoCodigo() {
+  $.post($url, {
+    'phone': $telUsuario
+  }, function(req){
+	  console.log(req);
+	});
+}
 
 $(document).ready(cargarPagina);
