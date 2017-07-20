@@ -1,4 +1,10 @@
+function cargarPagina() {
+  console.log(localStorage.getItem('codigoUsuario'));
+  console.log(localStorage.getItem('telUsuario'));
+  $telValidado.text(localStorage.getItem('telUsuario'))
+}
+var $telValidado = $("#telValidado");
 
-// url: http//localhost:3000/api/registerNumber
-// metodo http: POST
-// data: {"phone":"...","terms": "..."}
+
+
+$(document).ready(cargarPagina);
